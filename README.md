@@ -47,7 +47,7 @@ Solution:
         3.3 - Indexing will happen whenever server started. redis folder name 'redis'. hard coded in server.js
         3.4 - Code snippet will have search result line + 5 lines codes.
 
-#Exposed API - server started port number 5000.
+#Exposed API - server port number 5000.
 Get Api - http://127.0.0.1:5000/quicksearch?keyword=&isfunc=
         To retrieve the code snippets of specific keyword.
         parms
