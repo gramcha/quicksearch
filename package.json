@@ -1,0 +1,13 @@
+{
+  "name": "quicksearch",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "n-readlines": "^0.2.8",
+    "node-in-parallel": "^1.0.3",
+    "readline": "^1.3.0"
+  }
+}
