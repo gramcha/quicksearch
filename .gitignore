@@ -57,3 +57,14 @@ typings/
 # dotenv environment variables file
 .env
 
+
+.idea/misc.xml
+.idea/modules.xml
+.idea/quicksearch.iml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+tags
+
+nohup.out
+package-lock.json
