@@ -1,10 +1,10 @@
 /**
  * Created by gramcha on 15/09/17.
  */
-var utils = require('./utils/common');
-var parser = require('./parser');
-var query = require('./query');
-
+let  utils = require('./utils/common');
+let  parser = require('./parser');
+let  query = require('./query');
+//
 let filelist = utils.getFileList('./../redis/');
 let t1 = new Date();
 // filelist = ['/Users/gramcha/source/trials/redis/src/rand.c'];
@@ -15,7 +15,7 @@ console.log('index creattion time',(t2-t1)/1000);
 
 let t3 = new Date();
 //redisLrand48
-query.findCodeSnippet('tags','redisLrand48',true,(resultlist)=>{
+query.findCodeSnippet('tags','next',true,(resultlist)=>{
     let t4 = new Date();
     console.log("resultlist ",resultlist);
     console.log("result count - ",resultlist.length);
@@ -25,11 +25,11 @@ query.findCodeSnippet('tags','redisLrand48',true,(resultlist)=>{
 
 
 //
-// var fs = require('fs');
+// let  fs = require('fs');
 // let readline = require('readline');
 // let read = false;
 // //
-// let fp = fs.openSync('/Users/gramachandran/source/trials/redis/00-RELEASENOTES', 'r');
+// let fp = fs.openSync('/Users/gramcha/source/trials/redis/00-RELEASENOTES', 'r');
 // let stream = fs.createReadStream(null, {fd: fp, start: 130});
 //
 // try{
@@ -47,3 +47,14 @@ query.findCodeSnippet('tags','redisLrand48',true,(resultlist)=>{
 // }catch (err){
 //
 // }
+
+
+// var MultiHashMap = require('multi-hashmap').MultiHashMap;
+//
+// var players = new MultiHashMap('id', 'firstName', 'lastName', 'sport');
+// players.insert(2, 'Sachin', 'Tendulkar', 'cricket');
+// players.insert(2, 'Sachin', 'Sindhu', 'badminton');
+// players.insert(2, 'Roger', 'Federer', 'tennis');
+// players.insert(2, 'Saina', 'Nehwal', 'badminton');
+//
+// console.log(players.findAll('id', 2)); // --> [2, 'Pusarla', 'Sindhu', 'badminton']
