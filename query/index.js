@@ -113,8 +113,7 @@ function findCodeSnippet(indexFilepath, searchString, isFunctionType, callback) 
 
         /*method 3 - asynchronously read each file.But initialize file descriptor to the result line
          * instead of reading from line zero(fd=0) to result line
-         * this method seems to be fine when your search results file counts are less.
-         * But this takes more time to complete if the result file count is huge.
+         * this takes less time to complete if the result file count is huge.
          * For Example: finding 'a' in index file as not a function results in 2546.
          * reading each file to create snippet takes ~0.993 secs. It takes 1/3 of time compare to other methods.
          * */
