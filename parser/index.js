@@ -38,7 +38,7 @@ function createIndex(fileList, indexfilepath) {
                 // console.log(indexLine);
                 // return captureone;
             });
-            offset = offset + lineLength;
+            offset = offset + lineLength + 1;//1 for \n
             lineNumber++;
         }
     });
